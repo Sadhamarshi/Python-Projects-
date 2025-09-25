@@ -1,0 +1,25 @@
+while True:
+    try:
+        a = float(input("Enter number n1: "))
+        b = float(input("Enter number n2: "))
+        op = input("Enter operation +,-,*,/: ")
+        if op == "+":
+            c = a + b
+        elif op == "-":
+            c = a - b
+        elif op == "*":
+            c = a * b
+        elif op == "/":
+            if b == 0:
+                c = "Error: Division by Zero!!"
+            else:
+                c = a / b
+        else:
+            c = "Invalid Operation"
+        print("Result: ",c)
+    except:
+        print("Invalid! Enter correct number")
+    choice = input("Do u want to continue (yes/no): ")
+    if choice.lower() == "no":
+       print("Goodbye! 👋")
+       break
