@@ -1,0 +1,18 @@
+a = float(input("Number 1: "))
+b = float(input("Number 2: "))
+
+op = input("Enter an operator +,-,*,/,%: ")
+
+if op == "+":
+    c = a + b
+elif op == "-":
+    c = a - b
+elif op == "*":
+    c = a * b
+elif op == "/":
+    c = a / b
+elif op == "%":
+    c = a % b
+else:
+    c = ("Invalid Operation")
+print(c)
